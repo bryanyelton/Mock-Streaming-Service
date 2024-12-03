@@ -1,0 +1,359 @@
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background-color: #101820;
+  }
+  
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #1b2735;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #4db6e5;
+  }
+  
+  header nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header nav ul li {
+    margin-left: 1.5rem;
+  }
+  
+  header nav ul li a {
+    text-decoration: none;
+    color: #4db6e5;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  header nav ul li a:hover {
+    color: #84d4ff;
+  }
+  
+ 
+  .hero {
+    text-align: center;
+    padding: 5rem 2rem;
+    background: linear-gradient(135deg, #1b2735, #2a436a);
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero .cta {
+    padding: 0.75rem 2rem;
+    background-color: #4db6e5;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #101820;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero .cta:hover {
+    background-color: #84d4ff;
+  }
+  
+  .cta {
+    padding: 0.75rem 2rem;
+    background-color: #4db6e5;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #101820;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+
+  .content {
+    padding: 2rem;
+  }
+  
+  .content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #4db6e5;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .card {
+    padding: 1.5rem;
+    background-color: #1b2735;
+    border: 1px solid #4db6e5;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    background-color: #2a436a;
+  }
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #4db6e5;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    padding: 0.75rem;
+    border: 1px solid #4db6e5;
+    border-radius: 5px;
+    background-color: #1b2735;
+    color: #fff;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: #84d4ff;
+    background-color: #2a436a;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+	header nav ul {
+	  display: flex;
+	  list-style: none;
+	  margin: 0;
+	  padding: 0;
+	}
+
+	header nav ul li {
+	  margin-left: 1.5rem;
+	}
+
+	header nav ul li a {
+	  text-decoration: none;
+	  color: #4db6e5;
+	  font-weight: bold;
+	  transition: color 0.3s ease;
+	}
+
+	header nav ul li a:hover {
+	  color: #84d4ff;
+	}
+
+	/* Movie Page Styles */
+	.content {
+	  padding: 2rem;
+	  text-align: center;
+	}
+
+	.content h2 {
+	  font-size: 2rem;
+	  margin-bottom: 2rem;
+	  color: #4db6e5;
+	}
+
+	.grid {
+	  display: grid;
+	  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	  gap: 2rem;
+	  justify-items: center;
+	}
+
+	.card {
+	  background-color: #1b2735;
+	  padding: 1rem;
+	  border: 1px solid #4db6e5;
+	  border-radius: 10px;
+	  text-align: center;
+	  width: 100%;
+	  max-width: 300px;
+	  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	}
+
+	.card-img {
+	  width: 100%;
+	  height: auto;
+	  border-radius: 8px;
+	  margin-bottom: 1rem;
+	}
+
+	.card h3 {
+	  font-size: 1.2rem;
+	  color: #84d4ff;
+	  margin: 0;
+	}
+  .signup-form {
+    max-width: 500px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: #1b2735;
+    border: 1px solid #4db6e5;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .signup-form h2 {
+    font-size: 1.8rem;
+    color: #4db6e5;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .signup-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .signup-form label {
+    font-weight: bold;
+    color: #4db6e5;
+  }
+  
+  .signup-form input,
+  .signup-form select {
+    padding: 0.75rem;
+    border: 1px solid #4db6e5;
+    border-radius: 5px;
+    background-color: #101820;
+    color: #fff;
+    font-size: 1rem;
+    width: 100%;
+  }
+  
+  .signup-form input:focus,
+  .signup-form select:focus {
+    outline: none;
+    border-color: #84d4ff;
+    background-color: #2a436a;
+  }
+  
+  .signup-form button {
+    padding: 0.75rem;
+    background-color: #4db6e5;
+    border: none;
+    border-radius: 5px;
+    color: #101820;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .signup-form button:hover {
+    background-color: #84d4ff;
+  }
+  
+  .signup-form a {
+    color: #84d4ff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .signup-form a:hover {
+    text-decoration: underline;
+  }
+  .terms-container {
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: #1b2735;
+    border: 1px solid #4db6e5;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    line-height: 1.6;
+  }
+  
+  .terms-container h1 {
+    font-size: 2rem;
+    color: #4db6e5;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .terms-container h2 {
+    font-size: 1.5rem;
+    color: #84d4ff;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .terms-container p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #d1d5db;
+  }
+  
+  .terms-container ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .terms-container ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .terms-container a {
+    color: #84d4ff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .terms-container a:hover {
+    text-decoration: underline;
+  }
+  
+  footer {
+    background-color: #1b2735;
+    padding: 1rem;
+    text-align: center;
+    color: #84d4ff;
+    font-size: 0.9rem;
+    border-top: 1px solid #4db6e5;
+  }
+  
+  footer a {
+    color: #84d4ff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }

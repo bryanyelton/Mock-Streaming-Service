@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup - Movies Gallery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Signup</div>
+    <nav>
+      <ul>
+        <li><a href="casa_azul.html">Home Page</a></li>
+        <li><a href="tv_shows.html">TV Shows</a></li>
+        <li><a href="movies.html">Movies</a></li>
+        <li><a href="podcasts.html">Podcasts</a></li>
+        <li><a href="sports.html">sports</a></li>
+        <li><a href="about_us.html">About Us</a></li>
+        <li><a href="contact_us.html">Contact Us</a></li>
+        <li><a href="subscription_page.html">Subscription</a></li>
+        <li><a href="terms.html">Terms & Privacy</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="signup-form">
+    <h2>Create Your Account</h2>
+    <form id="signupForm" onsubmit="redirectToHome(event)">
+        <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Enter a password" required>
+
+      <label for="confirm-password">Confirm Password</label>
+      <input type="password" id="confirm-password" name="confirm_password" placeholder="Confirm your password" required>
+
+      <label for="dob">Date of Birth</label>
+      <input type="date" id="dob" name="dob" required>
+
+      <label for="subscription-plan">Choose a Subscription Plan</label>
+      <select id="subscription-plan" name="subscription_plan" required>
+        <option value="basic">Basic - $5/month</option>
+        <option value="standard">Standard - $10/month</option>
+        <option value="premium">Premium - $15/month</option>
+      </select>
+
+      <label>
+        <input type="checkbox" name="agree_terms" required>
+        I agree to the <a href="terms.html">Terms and Conditions</a>.
+      </label>
+        <button type="submit">Sign Up</button>
+      </form>
+      
+      <script>
+        function redirectToHome(event) {
+          event.preventDefault(); // Prevent the default form submission
+          window.location.href = "casa_azul.html"; // Redirect to the home page
+        }
+      </script>
+      
+    
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Movies Gallery. All rights reserved.</p>
+  </footer>
+</body>
+</html>
